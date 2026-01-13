@@ -97,7 +97,7 @@ To focus on climate and environmental policymaking, documents are filtered by su
 - Migration policy
 - Health policy
 
-The full list of sub-fields covered, within each domain, is provided HERE.
+The full list of sub-fields covered, within each domain, is provided [`here`](overton_topics.md).
 Only documents within these domains citing IPCC Assessment or Special Reports, published between 2013 and 2022 (whose full list of DOIs is provided above)
 are retrieved, through DOI and title-based queries.
 One observation corresponds to a policy document citing at least one IPCC report.
