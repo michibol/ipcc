@@ -2,7 +2,7 @@
 ## Data Sources and Methods
 
 This repository provides detailed methodological documentation supporting the paper  
-**“From Scientific Bedrock to Policy Relevance: The Evolving Roles of the IPCC Working Groups.”**
+**“From Scientific Bedrock to Policy Relevance: The Evolving Roles of the IPCC Working Groups.”** by Valentina Bosetti, Michela Boldrini, Marco De Benedictis, Alice Zambolin.
 
 Due to the use of proprietary data sources, this repository **substitutes and extends the Methods section of the paper**, ensuring transparency and replicability to the extent permitted by data access restrictions.
 
