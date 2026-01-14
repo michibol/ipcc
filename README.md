@@ -19,7 +19,7 @@ The analysis combines multiple data sources to track references and citations to
 | Scientific publications | [DimensionsAI](https://app.dimensions.ai), [Web of Science]( https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/) | Proprietary | [code](https://colab.research.google.com/drive/1nxOLu-D-5OQiyMwsBYq39drFkv1pJamZ?usp=sharing) |
 | Parliamentary speeches | [European Parliament](https://www.europarl.europa.eu/plenary/en/debates-video.html), [U.S. Congress](https://www.congress.gov) | Public | [code](https://colab.research.google.com/drive/1GMesfiCT3SOLM_mf4LutbvqN2vU-kWLR?usp=sharing) |
 | Policy documents | [Overton](https://www.overton.io/) | Proprietary | [code](https://colab.research.google.com/drive/18yvHlaartOyHBbhkR1NJFxgGa9T4JeYt?usp=sharing) |
-| UNFCCC documents | [UNFCCC website](https://unfccc.int/documents) | Public |. |
+| UNFCCC documents | [UNFCCC website](https://unfccc.int/documents) | Public | [code](https://colab.research.google.com/drive/1gBz53ebkZuTVpMpCJufMekP--OxMErYq?usp=sharing) |
 | Media coverage | [Factiva](https://global.factiva.com/) | Proprietary |. |
 
 ---
@@ -124,12 +124,22 @@ Out of all documents available on the website -  over 56000 at the time of colle
   - Relevance of document type
   - English language 
   - PDF format
-More details on the topics covered and document types is available HERE.
-The final dataset counts over 9000 documents. 
 
-Textual content is extracted and IPCC references are identified using keyword-based searches distinguishing:
-- overall IPCC references,
-- Working Group I, II, and III references.
+More details on the topics covered and document types are available HERE.
+
+The final dataset counts over 9000 documents (for more detailed info on the dataset's construction, please check [here](https://github.com/mdb2000/UNFCCC-Human-mobility)).
+From the final dataset, the textual content of documents is extracted, and the frequency and distribution of citations to the IPCC are assessed through a keyword-based search. 
+References to IPCC outputs in UNFCCC documents were identified through a keyword-based search using the following permutations.
+
+
+| Category | Keywords / Search Strings |
+|---------|---------------------------|
+| **IPCC (overall)** | `(IPCC)` OR `(Intergovernmental Panel on Climate Change)` |
+| **Working Group I** | `(IPCC AND Working Group I/1)` OR `(IPCC AND WGI/1)` OR `(Intergovernmental Panel on Climate Change AND Working Group I/1)` OR `(Intergovernmental Panel on Climate Change AND WGI/1)` |
+| **Working Group II** | `(IPCC AND Working Group II/2)` OR `(IPCC AND WGII/2)` OR `(Intergovernmental Panel on Climate Change AND Working Group II/2)` OR `(Intergovernmental Panel on Climate Change AND WGII/2)` |
+| **Working Group III** | `(IPCC AND Working Group III/3)` OR `(IPCC AND WGIII/3)` OR `(Intergovernmental Panel on Climate Change AND Working Group III/3)` OR `(Intergovernmental Panel on Climate Change AND WGIII/3)` |
+
+One observation corresponds to a document matching any of the permutations.
 
 ---
 
