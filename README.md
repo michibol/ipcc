@@ -125,7 +125,7 @@ Out of all documents available on the website -  over 56000 at the time of colle
   - English language 
   - PDF format
 
-More details on the topics covered and document types are available HERE.
+More details on the topics covered and document types are available [`here`](unfccc.md).
 
 The final dataset counts over 9000 documents (for more detailed info on the dataset's construction, please check [here](https://github.com/mdb2000/UNFCCC-Human-mobility)).
 From the final dataset, the textual content of documents is extracted, and the frequency and distribution of citations to the IPCC are assessed through a keyword-based search. 
@@ -146,18 +146,13 @@ One observation corresponds to a document matching any of the permutations.
 ## Figure 4 – Media Coverage
 
 Media relevance of the IPCC is measured using **Factiva**.
-
+We obtain the count of references to each individual Working Group output and the IPCC, through a keywords-based search.
 - Coverage period: 2013–2024
 - Regions: Europe and United States
 - Queries are unconstrained by language or source
 
-Separate keyword sets are used to identify references to:
-- IPCC overall
-- Working Group I
-- Working Group II
-- Working Group III
-
 One observation corresponds to a media document matching any keyword permutation.
+The full list of keywords permutations used is available HERE.
 
 ---
 
@@ -167,29 +162,18 @@ Due to licensing restrictions, raw proprietary data cannot be shared.
 
 However, this repository provides:
 
-- aggregated and derived datasets sufficient to reproduce all figures;
-- fully documented code for data processing and visualization.
-
-Relevant scripts include:
-
-- `collab.py` – code to reproduce all figures from aggregated data  
-  *(links will be added upon final release)*
+- Aggregated and derived datasets sufficient to reproduce all figures;
+- Fully documented code for data processing and visualization.
 
 ---
 
 ## Data Availability Statement
 
 Access to proprietary data sources (DimensionsAI, Overton, Factiva, Web of Science) is subject to third-party licensing agreements.
-
 Researchers with access to these services can reproduce the full data collection following the procedures documented in this repository.
 
 ---
 
 ## Contact
 
-For questions regarding data construction or replication:
-
-- Valentina Bosetti  
-- Michela Boldrini  
-- Marco De Benedectis  
-- Alice Zambolin
+For questions regarding data construction or replication, contact Michela Boldrini.
