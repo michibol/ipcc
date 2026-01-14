@@ -20,7 +20,7 @@ The analysis combines multiple data sources to track references and citations to
 | Parliamentary speeches | [European Parliament](https://www.europarl.europa.eu/plenary/en/debates-video.html), [U.S. Congress](https://www.congress.gov) | Public | [code](https://colab.research.google.com/drive/1GMesfiCT3SOLM_mf4LutbvqN2vU-kWLR?usp=sharing) |
 | Policy documents | [Overton](https://www.overton.io/) | Proprietary | [code](https://colab.research.google.com/drive/18yvHlaartOyHBbhkR1NJFxgGa9T4JeYt?usp=sharing) |
 | UNFCCC documents | [UNFCCC website](https://unfccc.int/documents) | Public | [code](https://colab.research.google.com/drive/1gBz53ebkZuTVpMpCJufMekP--OxMErYq?usp=sharing) |
-| Media coverage | [Factiva](https://global.factiva.com/) | Proprietary |. |
+| Media coverage | [Factiva](https://global.factiva.com/) | Proprietary | [code](https://colab.research.google.com/drive/1SRytFT7S_hECaDi_KPn3v4pSl6NxNgJL?usp=sharing)|
 
 ---
 
@@ -97,7 +97,7 @@ To focus on climate and environmental policymaking, documents are filtered by su
 - Migration policy
 - Health policy
 
-The full list of sub-fields covered, within each domain, is provided [`here`](overton_topics.md).
+The full list of sub-fields covered within each domain is provided [`here`](overton_topics.md).
 Only documents within these domains citing IPCC Assessment or Special Reports, published between 2013 and 2022 (whose full list of DOIs is provided above)
 are retrieved, through DOI and title-based queries.
 One observation corresponds to a policy document citing at least one IPCC report.
@@ -152,7 +152,7 @@ We obtain the count of references to each individual Working Group output and th
 - Queries are unconstrained by language or source
 
 One observation corresponds to a media document matching any keyword permutation.
-The full list of keywords permutations used is available HERE.
+The full list of keyword permutations used is available [`here`](factiva.md). 
 
 ---
 
@@ -176,4 +176,4 @@ Researchers with access to these services can reproduce the full data collection
 
 ## Contact
 
-For questions regarding data construction or replication, contact Michela Boldrini.
+For questions regarding data construction or replication, contact [Michela Boldrini](mailto:michela.boldrini@cmcc.it).
