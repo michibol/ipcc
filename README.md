@@ -17,8 +17,8 @@ The analysis combines multiple data sources to track references and citations to
 | Domain | Data Source | Access | Code |
 |------|------------|--------|--------|
 | Scientific publications | [DimensionsAI](https://app.dimensions.ai), [Web of Science]( https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/) | Proprietary | [code](https://colab.research.google.com/drive/1nxOLu-D-5OQiyMwsBYq39drFkv1pJamZ?usp=sharing) |
-| Parliamentary speeches | [European Parliament](https://www.europarl.europa.eu/plenary/en/debates-video.html), [U.S. Congress](https://www.congress.gov) | Public | . |
-| Policy documents | [Overton](https://www.overton.io/) | Proprietary | . |
+| Parliamentary speeches | [European Parliament](https://www.europarl.europa.eu/plenary/en/debates-video.html), [U.S. Congress](https://www.congress.gov) | Public | [code](https://colab.research.google.com/drive/1GMesfiCT3SOLM_mf4LutbvqN2vU-kWLR?usp=sharing) |
+| Policy documents | [Overton](https://www.overton.io/) | Proprietary | [code](https://colab.research.google.com/drive/18yvHlaartOyHBbhkR1NJFxgGa9T4JeYt?usp=sharing) |
 | UNFCCC documents | [UNFCCC website](https://unfccc.int/documents) | Public |. |
 | Media coverage | [Factiva](https://global.factiva.com/) | Proprietary |. |
 
@@ -112,20 +112,20 @@ Policy documents are collected from:
 - **U.S. State-level institutions**
 - **U.S. Federal institutions**
 
+The full list of institutions covered, within each category, is provided [`here`](overton_institutions.md).
 
 ---
 
 ## Figure 3 – UNFCCC Documentation
 
 References to IPCC outputs within UNFCCC documentation are identified using a novel textual dataset constructed by manually downloading documents from the UNFCCC website.
-
-- Over **56,000 documents** were available at the time of collection (February–April 2024).
-- Selection criteria:
-  - relevance to climate policy topics,
-  - English language,
-  - PDF format.
-
-The final dataset includes **over 9,000 documents**.
+Out of all documents available on the website -  over 56000 at the time of collection (February–April 2024) - a selection is operated based on the following criteria:
+  - Relevance to climate policy topics 
+  - Relevance of document type
+  - English language 
+  - PDF format
+More details on the topics covered and document types is available HERE.
+The final dataset counts over 9000 documents. 
 
 Textual content is extracted and IPCC references are identified using keyword-based searches distinguishing:
 - overall IPCC references,
