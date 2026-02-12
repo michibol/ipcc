@@ -31,7 +31,7 @@ The analysis combines multiple data sources to track references and citations to
 Data on citations to IPCC Assessment and Special Reports in scientific papers are retrieved using **DimensionsAI – Altmetrics**, through DOI-based queries.
 
 - One observation corresponds to a scientific paper citing at least one IPCC report.
-- Coverage includes both **Assessment Reports (AR5, AR6)** and **Special Reports** published between 2013 and 2022.
+- Coverage includes both **Assessment Reports (AR5, AR6)** and **Special Reports** published between 2013 and 2025.
 
 #### IPCC Reports Included
 
@@ -55,10 +55,7 @@ Data on citations to IPCC Assessment and Special Reports in scientific papers ar
 
 ### Normalization of Scientific Output
 
-To account for trends in overall scientific production, we retrieve the yearly total number of climate-related scientific papers through **Web of Science**, using the keywords:
-
-- `Climate Change AND Global Warming`
-
+To account for trends in overall scientific production, we retrieve the yearly total number of climate-related scientific papers through a `Climate Change` topic search on **Web of Science**.
 Following Vasileiadou et al. (2011), we compute a **normalized share of IPCC-citing papers**, defined as the ratio between:
 
 - the number of scientific papers citing IPCC reports (obtained as described above), and  
