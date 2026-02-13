@@ -136,7 +136,7 @@ One observation corresponds to a document matching any of the permutations.
 
 ---
 
-## Figure 5 – Media Coverage
+## Figure 5 – Media
 
 Media relevance of the IPCC is measured using **Factiva**.
 We obtain the count of references to each individual Working Group output and the IPCC, through a keywords-based search.
