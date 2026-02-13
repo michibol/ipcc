@@ -26,11 +26,9 @@ The analysis combines multiple data sources to track references and citations to
 
 ## Figure 1 – Scientific Publications
 
-### IPCC Citations in Scientific Papers
-
 Data on citations to IPCC Assessment and Special Reports in scientific papers are retrieved using **DimensionsAI – Altmetrics**, through DOI-based queries.
 
-- One observation corresponds to a scientific paper citing one of the IPCC reports of interest.
+- One observation corresponds to a scientific paper citing one of the IPCC reports.
 - Coverage includes both **Assessment Reports (AR5, AR6)** and **Special Reports** published between 2013 and 2025.
 
 #### IPCC Reports Included
@@ -63,9 +61,7 @@ Following Vasileiadou et al. (2011), we compute a **normalized share of IPCC-cit
 
 ---
 
-## Figure 2 – Parliamentary Speeches and Policy Documents
-
-### Parliamentary Speeches (Top Panel)
+## Figure 2 – Parliamentary Speeches 
 
 References to IPCC outputs in parliamentary debates are identified through a keyword-based search of:
 
@@ -81,7 +77,7 @@ One observation corresponds to a parliamentary speech citing the IPCC at least o
 
 ---
 
-### Policy Documents (Bottom Panels)
+## Figure 3 – Policy Documents
 
 Citations to IPCC reports in policy documents are retrieved using **Overton**.
 
@@ -97,23 +93,23 @@ To focus on climate and environmental policymaking, documents are filtered by su
 The full list of sub-fields covered within each domain is provided [`here`](overton_topics.md).
 Only documents within these domains citing IPCC Assessment or Special Reports, published between 2013 and 2022 (whose full list of DOIs is provided above)
 are retrieved, through DOI and title-based queries.
-One observation corresponds to a policy document citing at least one IPCC report.
+One observation corresponds to a policy document citing one of the IPCC reports.
 
 
 #### Institutional Coverage
 
 Policy documents are collected from:
 
-- **EU Member States** (national governments and parliaments)
-- **EU-level institutions**
-- **U.S. State-level institutions**
-- **U.S. Federal institutions**
+- **EU Nations** (national governments and parliaments)
+- **EU Bodies** (EU-level supranational institutions) 
+- **US States**
+- **US Federal institutions**
 
 The full list of institutions covered, within each category, is provided [`here`](overton_institutions.md).
 
 ---
 
-## Figure 3 – UNFCCC Documentation
+## Figure 4 – UNFCCC Documentation
 
 References to IPCC outputs within UNFCCC documentation are identified using a novel textual dataset constructed by manually downloading documents from the UNFCCC website.
 Out of all documents available on the website -  over 56000 at the time of collection (February–April 2024) - a selection is operated based on the following criteria:
@@ -140,7 +136,7 @@ One observation corresponds to a document matching any of the permutations.
 
 ---
 
-## Figure 4 – Media Coverage
+## Figure 5 – Media Coverage
 
 Media relevance of the IPCC is measured using **Factiva**.
 We obtain the count of references to each individual Working Group output and the IPCC, through a keywords-based search.
