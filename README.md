@@ -30,7 +30,7 @@ The analysis combines multiple data sources to track references and citations to
 
 Data on citations to IPCC Assessment and Special Reports in scientific papers are retrieved using **DimensionsAI – Altmetrics**, through DOI-based queries.
 
-- One observation corresponds to a scientific paper citing at least one IPCC report.
+- One observation corresponds to a scientific paper citing one of the IPCC reports of interest.
 - Coverage includes both **Assessment Reports (AR5, AR6)** and **Special Reports** published between 2013 and 2025.
 
 #### IPCC Reports Included
