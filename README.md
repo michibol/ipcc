@@ -17,7 +17,7 @@ The analysis combines multiple data sources to track references and citations to
 | Domain | Data Source | Access | Code |
 |------|------------|--------|--------|
 | Scientific publications | [DimensionsAI](https://app.dimensions.ai), [Web of Science]( https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/) | Proprietary | [code](https://colab.research.google.com/drive/1nxOLu-D-5OQiyMwsBYq39drFkv1pJamZ?usp=sharing) |
-| Parliamentary speeches | [European Parliament](https://www.europarl.europa.eu/plenary/en/debates-video.html), [U.S. Congress](https://www.congress.gov) | Public | [code](https://colab.research.google.com/drive/1GMesfiCT3SOLM_mf4LutbvqN2vU-kWLR?usp=sharing) |
+| Parliamentary debates | [European Parliament](https://www.europarl.europa.eu/plenary/en/home.html), [U.S. Congress](https://www.congress.gov) | Public | [code](https://colab.research.google.com/drive/1GMesfiCT3SOLM_mf4LutbvqN2vU-kWLR?usp=sharing) |
 | Policy documents | [Overton](https://www.overton.io/) | Proprietary | [code](https://colab.research.google.com/drive/18yvHlaartOyHBbhkR1NJFxgGa9T4JeYt?usp=sharing) |
 | UNFCCC documents | [UNFCCC website](https://unfccc.int/documents) | Public | [code](https://colab.research.google.com/drive/1gBz53ebkZuTVpMpCJufMekP--OxMErYq?usp=sharing) |
 | Media coverage | [Factiva](https://global.factiva.com/) | Proprietary | [code](https://colab.research.google.com/drive/1SRytFT7S_hECaDi_KPn3v4pSl6NxNgJL?usp=sharing)|
@@ -28,8 +28,8 @@ The analysis combines multiple data sources to track references and citations to
 
 Data on citations to IPCC Assessment and Special Reports in scientific papers are retrieved using **DimensionsAI – Altmetrics**, through DOI-based queries.
 
-- One observation corresponds to a scientific paper citing one of the IPCC reports.
-- Coverage includes both **Assessment Reports (AR5, AR6)** and **Special Reports** published between 2013 and 2025.
+- One observation corresponds to a scientific paper citing one of the IPCC reports considered.
+- Coverage includes the **Assessment Reports (AR5, AR6)** and **Special Reports** published between 2013 and 2025.
 
 #### IPCC Reports Included
 
@@ -37,7 +37,7 @@ Data on citations to IPCC Assessment and Special Reports in scientific papers ar
 
 - AR5  
   - Working Group I (2013): `10.1017/cbo9781107415324`  
-  - Working Group II (2014): `10.1017/cbo9781107415386`  
+  - Working Group II (2014): `10.1017/cbo9781107415379` (Part A), `10.1017/cbo9781107415386` (Part B)
   - Working Group III (2014): `10.1017/cbo9781107415416`  
 
 - AR6  
@@ -54,26 +54,26 @@ Data on citations to IPCC Assessment and Special Reports in scientific papers ar
 ### Normalization of Scientific Output
 
 To account for trends in overall scientific production, we retrieve the yearly total number of climate-related scientific papers through a `Climate Change` topic search on **Web of Science**.
-Following Vasileiadou et al. (2011), we compute a **normalized share of IPCC-citing papers**, defined as the ratio between:
+Following Vasileiadou et al. (2011), we compute a normalized measure of IPCC relevance, the **share of IPCC-citing papers**, defined as the ratio between:
 
 - the number of scientific papers citing IPCC reports (obtained as described above), and  
 - the total number of climate-related scientific publications in a given year.
 
 ---
 
-## Figure 2 – Parliamentary Speeches 
+## Figure 2 – Parliamentary Debates 
 
 References to IPCC outputs in parliamentary debates are identified through a keyword-based search of:
 
-- European Parliament plenary speeches and debates  
-- U.S. Congressional speech records
+- European Parliament plenary [minutes](https://www.europarl.europa.eu/plenary/en/minutes.html), [debates and video](https://www.europarl.europa.eu/plenary/en/debates-video.html) recordings
+- U.S. Congressional speech records 
 
 **Keywords**
 
 - `IPCC`
 - `Intergovernmental Panel on Climate Change`
 
-One observation corresponds to a parliamentary speech citing the IPCC at least once.
+One observation corresponds to a record mentioning the IPCC at least once.
 
 ---
 
@@ -95,7 +95,6 @@ Only documents within these domains citing IPCC Assessment or Special Reports, p
 are retrieved, through DOI and title-based queries.
 One observation corresponds to a policy document citing one of the IPCC reports.
 
-
 #### Institutional Coverage
 
 Policy documents are collected from:
@@ -106,6 +105,13 @@ Policy documents are collected from:
 - **US Federal institutions**
 
 The full list of institutions covered, within each category, is provided [`here`](overton_institutions.md).
+
+### Normalization of Policy output
+
+To allow for a direct comparison of IPCC reports' relative importance across geographies and institutional settings, despite marked differences in volumes, we compute a normalized measure of IPCC relevance, defined as the ratio between:
+
+- the yearly total number of policy documents citing IPCC reports (obtained as described above), and  
+- the overall number of policy documents produced in the domains of interest in a given year.
 
 ---
 
@@ -139,13 +145,20 @@ One observation corresponds to a document matching any of the permutations.
 ## Figure 5 – Media
 
 Media relevance of the IPCC is measured using **Factiva**.
-We obtain the count of references to each individual Working Group output and the IPCC, through a keywords-based search.
+We obtain the count of references to each individual Working Group output and the IPCC through a keywords-based search.
 - Coverage period: 2013–2024
-- Regions: Europe and United States
+- Regions: Europe and the United States
 - Queries are unconstrained by language or source
 
 One observation corresponds to a media document matching any keyword permutation.
 The full list of keyword permutations used is available [`here`](factiva.md). 
+
+### Normalization of Media output
+
+To ease comparisons, we compute a normalized measure of IPCC relevance in the media for each region, defined as the ratio between:
+
+- the yearly count of general references to the IPCC in the news (obtained as described above), and
+- the total volume of news covering topics related to climate change and global warmingin a given year.
 
 ---
 
