@@ -51,10 +51,11 @@ Data on citations to IPCC Assessment and Special Reports in scientific papers ar
 - SR Ocean (2019): `10.1017/9781009157964`  
 - SR Land (2022): `10.1017/9781009157988`  
 
-### Normalization of Scientific Output
+
+#### IPCC relevance in scientific publications
 
 To account for trends in overall scientific production, we retrieve the yearly total number of climate-related scientific papers through a `Climate Change` topic search on **Web of Science**.
-Following Vasileiadou et al. (2011), we compute a normalized measure of IPCC relevance, the **share of IPCC-citing papers**, defined as the ratio between:
+Following Vasileiadou et al. (2011), we compute a normalized measure of IPCC relevance, defined as the ratio between:
 
 - the number of scientific papers citing IPCC reports (obtained as described above), and  
 - the total number of climate-related scientific publications in a given year.
@@ -106,13 +107,13 @@ Policy documents are collected from:
 
 The full list of institutions covered, within each category, is provided [`here`](overton_institutions.md).
 
-### Normalization of Policy output
+#### IPCC relevance in policy documents
 
 To allow for a direct comparison of IPCC reports' relative importance across geographies and institutional settings, despite marked differences in volumes, we compute a normalized measure of IPCC relevance, defined as the ratio between:
 
 - the yearly total number of policy documents citing IPCC reports (obtained as described above), and  
 - the overall number of policy documents produced in the domains of interest in a given year.
-
+  
 ---
 
 ## Figure 4 – UNFCCC Documentation
@@ -130,10 +131,8 @@ The final dataset counts over 9000 documents (for more detailed info on the data
 From the final dataset, the textual content of documents is extracted, and the frequency and distribution of citations to the IPCC are assessed through a keyword-based search. 
 References to IPCC outputs in UNFCCC documents were identified through a keyword-based search using the following permutations.
 
-
 | Category | Keywords / Search Strings |
 |---------|---------------------------|
-| **IPCC (overall)** | `(IPCC)` OR `(Intergovernmental Panel on Climate Change)` |
 | **Working Group I** | `(IPCC AND Working Group I/1)` OR `(IPCC AND WGI/1)` OR `(Intergovernmental Panel on Climate Change AND Working Group I/1)` OR `(Intergovernmental Panel on Climate Change AND WGI/1)` |
 | **Working Group II** | `(IPCC AND Working Group II/2)` OR `(IPCC AND WGII/2)` OR `(Intergovernmental Panel on Climate Change AND Working Group II/2)` OR `(Intergovernmental Panel on Climate Change AND WGII/2)` |
 | **Working Group III** | `(IPCC AND Working Group III/3)` OR `(IPCC AND WGIII/3)` OR `(Intergovernmental Panel on Climate Change AND Working Group III/3)` OR `(Intergovernmental Panel on Climate Change AND WGIII/3)` |
@@ -153,7 +152,7 @@ We obtain the count of references to each individual Working Group output and th
 One observation corresponds to a media document matching any keyword permutation.
 The full list of keyword permutations used is available [`here`](factiva.md). 
 
-### Normalization of Media output
+#### IPCC relevance in the media
 
 To ease comparisons, we compute a normalized measure of IPCC relevance in the media for each region, defined as the ratio between:
 
