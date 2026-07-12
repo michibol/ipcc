@@ -21,7 +21,6 @@ The analysis combines multiple data sources to track references and citations to
 | UNFCCC documents | [UNFCCC website](https://unfccc.int/documents) | Public | [code](https://colab.research.google.com/drive/1BmV8RswdUGNqAAClEL0_Vm2Yt2EIM35c?usp=sharing) |
 | Media coverage | [Factiva](https://global.factiva.com/) | Proprietary | [code](https://colab.research.google.com/drive/1TPAS1Zl5lLkcsUt0Y-BG7XfQ7iCKnSBc?usp=sharing)|
 | Supplementary Materials |
-|------------------------|
 | Parliamentary debates | [European Parliament](https://www.europarl.europa.eu/plenary/en/home.html), [U.S. Congress](https://www.congress.gov) | Public | [code](https://colab.research.google.com/drive/1GMesfiCT3SOLM_mf4LutbvqN2vU-kWLR?usp=sharing) |
 ---
 
@@ -30,7 +29,7 @@ The analysis combines multiple data sources to track references and citations to
 Data on citations to IPCC Assessment and Special Reports in scientific papers are retrieved using **DimensionsAI – Altmetrics**, through DOI-based queries.
 
 - One observation corresponds to a scientific paper citing one of the IPCC reports considered.
-- Coverage includes the **Assessment Reports (AR5, AR6)** and **Special Reports** published between 2013 and 2025.
+- Coverage includes the **Assessment Reports (AR5, AR6)** and **Special Reports** published between 2011 and 2025.
 
 #### IPCC Reports Included
 
@@ -53,6 +52,7 @@ Data on citations to IPCC Assessment and Special Reports in scientific papers ar
 - SR Ocean (2019): `10.1017/9781009157964`  
 - SR Land (2022): `10.1017/9781009157988`
 
+The same data is used to produce Figure A1 in the Supplementary Materials, with the addition of the AR4 Report - contribution of Working Group III (2007): `10.1017/CBO9780511546013`.  
 
 
 #### IPCC relevance in scientific publications
@@ -63,25 +63,9 @@ Following Vasileiadou et al. (2011), we compute a normalized measure of IPCC rel
 - the number of scientific papers citing IPCC reports (obtained as described above), and  
 - the total number of climate-related scientific publications in a given year.
 
----
 
-## Figure 2 – Parliamentary Debates 
 
-References to IPCC outputs in parliamentary debates are identified through a keyword-based search of:
-
-- European Parliament plenary [minutes](https://www.europarl.europa.eu/plenary/en/minutes.html), [debates and video](https://www.europarl.europa.eu/plenary/en/debates-video.html) recordings
-- U.S. Congressional speech records 
-
-**Keywords**
-
-- `IPCC`
-- `Intergovernmental Panel on Climate Change`
-
-One observation corresponds to a record mentioning the IPCC at least once.
-
----
-
-## Figure 3 – Policy Documents
+## Figure 2 – Policy Documents
 
 Citations to IPCC reports in policy documents are retrieved using **Overton**.
 
@@ -95,8 +79,8 @@ To focus on climate and environmental policymaking, documents are filtered by su
 - Health policy
 
 The full list of sub-fields covered within each domain is provided [`here`](overton_topics.md).
-Only documents within these domains citing IPCC Assessment or Special Reports, published between 2013 and 2022 (whose full list of DOIs is provided above)
-are retrieved, through DOI and title-based queries.
+Only documents within these domains citing IPCC Assessment or Special Reports, published between 2011 and 2022 (whose full list of DOIs is provided above)
+are retrieved title-based queries.
 One observation corresponds to a policy document citing one of the IPCC reports.
 
 #### Institutional Coverage
@@ -109,6 +93,9 @@ Policy documents are collected from:
 - **US Federal institutions**
 
 The full list of institutions covered, within each category, is provided [`here`](overton_institutions.md).
+Within regions, data are then aggregated to produce the graphical representations.
+The same data is used to produce Figure A3 in the Supplementary Materials.
+
 
 #### IPCC relevance in policy documents
 
@@ -119,10 +106,12 @@ To allow for a direct comparison of IPCC reports' relative importance across geo
   
 ---
 
-## Figure 4 – UNFCCC Documentation
+
+
+## Figure 3 – UNFCCC Documentation
 
 References to IPCC outputs within UNFCCC documentation are identified using a novel textual dataset constructed by manually downloading documents from the UNFCCC website.
-Out of all documents available on the website -  over 56000 at the time of collection (February–April 2024) - a selection is operated based on the following criteria:
+Out of all documents available on the website -  over 56000 at the time of collection (February–April 2024) - a selection is made based on the following criteria:
   - Relevance to climate policy topics 
   - Relevance of document type
   - English language 
@@ -141,19 +130,23 @@ References to IPCC outputs in UNFCCC documents were identified through a keyword
 | **Working Group III** | `(IPCC AND Working Group III/3)` OR `(IPCC AND WGIII/3)` OR `(Intergovernmental Panel on Climate Change AND Working Group III/3)` OR `(Intergovernmental Panel on Climate Change AND WGIII/3)` |
 
 One observation corresponds to a document matching any of the permutations.
+The same data is used to produce Figure A4 in the Supplementary Materials.
+
 
 ---
 
-## Figure 5 – Media
+## Figure 4 – Media
 
 Media relevance of the IPCC is measured using **Factiva**.
 We obtain the count of references to each individual Working Group output and the IPCC through a keywords-based search.
 - Coverage period: 2013–2024
-- Regions: Europe and the United States
-- Queries are unconstrained by language or source
+- Regions: European Union Countries, United States
+- Source Type: we restrict the search to media outlets only (we exclude: Business Sources, Business to Consumer Services (B2C), Dow Jones Sources, European Union Sources, Government and Politics, Legal Sources, Nongovernmental organizations (NGO), Official Government Sources, Research Reports, Sports, Think Tanks).
+- Queries are unconstrained by language.
 
 One observation corresponds to a media document matching any keyword permutation.
 The full list of keyword permutations used is available [`here`](factiva.md). 
+The same data is used to produce Figure A5 in the Supplementary Materials.
 
 #### IPCC relevance in the media
 
@@ -161,6 +154,26 @@ To ease comparisons, we compute a normalized measure of IPCC relevance in the me
 
 - the yearly count of general references to the IPCC in the news (obtained as described above), and
 - the total volume of news covering topics related to climate change and global warmingin a given year.
+
+
+
+---
+## Supplementary Materials
+---
+
+## Figure A2 – Parliamentary Debates 
+
+References to IPCC outputs in parliamentary debates are identified through a keyword-based search of:
+
+- European Parliament plenary [minutes](https://www.europarl.europa.eu/plenary/en/minutes.html), [debates and video](https://www.europarl.europa.eu/plenary/en/debates-video.html) recordings
+- U.S. Congressional speech records 
+
+**Keywords**
+
+- `IPCC`
+- `Intergovernmental Panel on Climate Change`
+
+One observation corresponds to a record mentioning the IPCC at least once.
 
 ---
 
