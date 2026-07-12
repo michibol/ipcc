@@ -16,12 +16,13 @@ The analysis combines multiple data sources to track references and citations to
 
 | Domain | Data Source | Access | Code |
 |------|------------|--------|--------|
-| Scientific publications | [DimensionsAI](https://app.dimensions.ai), [Web of Science]( https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/) | Proprietary | [code](https://colab.research.google.com/drive/1nxOLu-D-5OQiyMwsBYq39drFkv1pJamZ?usp=sharing) |
+| Scientific publications | [DimensionsAI](https://app.dimensions.ai), [Web of Science]( https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/) | Proprietary | [code](https://colab.research.google.com/drive/1ZxMK9drRj1KVShQ8Eoy2kTGQzMcbSRP2?usp=sharing) |
+| Policy documents | [Overton](https://www.overton.io/) | Proprietary | [code](https://colab.research.google.com/drive/1p63dkz2RGEW058jtry3InyZx_MVMRLyc?usp=sharing) |
+| UNFCCC documents | [UNFCCC website](https://unfccc.int/documents) | Public | [code](https://colab.research.google.com/drive/1BmV8RswdUGNqAAClEL0_Vm2Yt2EIM35c?usp=sharing) |
+| Media coverage | [Factiva](https://global.factiva.com/) | Proprietary | [code](https://colab.research.google.com/drive/1TPAS1Zl5lLkcsUt0Y-BG7XfQ7iCKnSBc?usp=sharing)|
+| Supplementary Materials |
+|------------------------|
 | Parliamentary debates | [European Parliament](https://www.europarl.europa.eu/plenary/en/home.html), [U.S. Congress](https://www.congress.gov) | Public | [code](https://colab.research.google.com/drive/1GMesfiCT3SOLM_mf4LutbvqN2vU-kWLR?usp=sharing) |
-| Policy documents | [Overton](https://www.overton.io/) | Proprietary | [code](https://colab.research.google.com/drive/18yvHlaartOyHBbhkR1NJFxgGa9T4JeYt?usp=sharing) |
-| UNFCCC documents | [UNFCCC website](https://unfccc.int/documents) | Public | [code](https://colab.research.google.com/drive/1gBz53ebkZuTVpMpCJufMekP--OxMErYq?usp=sharing) |
-| Media coverage | [Factiva](https://global.factiva.com/) | Proprietary | [code](https://colab.research.google.com/drive/1SRytFT7S_hECaDi_KPn3v4pSl6NxNgJL?usp=sharing)|
-
 ---
 
 ## Figure 1 – Scientific Publications
@@ -47,9 +48,11 @@ Data on citations to IPCC Assessment and Special Reports in scientific papers ar
 
 **Special Reports**
 
+- SRREN (2011): `10.1017/CBO9781139151153`  
 - SR1.5 (2018): `10.1017/9781009157940`  
 - SR Ocean (2019): `10.1017/9781009157964`  
-- SR Land (2022): `10.1017/9781009157988`  
+- SR Land (2022): `10.1017/9781009157988`
+
 
 
 #### IPCC relevance in scientific publications
