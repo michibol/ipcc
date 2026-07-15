@@ -52,7 +52,7 @@ Data on citations to IPCC Assessment and Special Reports in scientific papers ar
 - SR Ocean (2019): `10.1017/9781009157964`  
 - SR Land (2022): `10.1017/9781009157988`
 
-The same data is used to produce Figure A1 in the Supplementary Materials, with the addition of the AR4 Report - contribution of Working Group III (2007): `10.1017/CBO9780511546013`.  
+The same data is used to produce Figures A1, with the addition of the AR4 Report - contribution of Working Group III (2007): `10.1017/CBO9780511546013`, and Figure A2 reported in the Supplementary Materials.
 
 
 #### IPCC relevance in scientific publications
@@ -94,7 +94,7 @@ Policy documents are collected from:
 
 The full list of institutions covered, within each category, is provided [`here`](overton_institutions.md).
 Within regions, data are then aggregated to produce the graphical representations.
-The same data is used to produce Figure A3 in the Supplementary Materials.
+The same data is used to produce Figure A4 in the Supplementary Materials.
 
 
 #### IPCC relevance in policy documents
@@ -130,7 +130,7 @@ References to IPCC outputs in UNFCCC documents were identified through a keyword
 | **Working Group III** | `(IPCC AND Working Group III/3)` OR `(IPCC AND WGIII/3)` OR `(Intergovernmental Panel on Climate Change AND Working Group III/3)` OR `(Intergovernmental Panel on Climate Change AND WGIII/3)` |
 
 One observation corresponds to a document matching any of the permutations.
-The same data is used to produce Figure A4 in the Supplementary Materials.
+The same data is used to produce Figure A5 in the Supplementary Materials.
 
 
 ---
@@ -146,7 +146,7 @@ We obtain the count of references to each individual Working Group output and th
 
 One observation corresponds to a media document matching any keyword permutation.
 The full list of keyword permutations used is available [`here`](factiva.md). 
-The same data is used to produce Figure A5 in the Supplementary Materials.
+The same data is used to produce Figure A6 in the Supplementary Materials.
 
 #### IPCC relevance in the media
 
@@ -161,7 +161,7 @@ To ease comparisons, we compute a normalized measure of IPCC relevance in the me
 ## Supplementary Materials
 ---
 
-## Figure A2 – Parliamentary Debates 
+## Figure A3 – Parliamentary Debates 
 
 References to IPCC outputs in parliamentary debates are identified through a keyword-based search of:
 
